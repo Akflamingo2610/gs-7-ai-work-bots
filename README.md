@@ -70,17 +70,15 @@ Após iniciar a aplicação, a API estará disponível em:
 ```json
 {
   "tema": "Bots e agentes de IA como parceiros no dia a dia de trabalho",
-  "membro1": "Nome do Membro 1",
-  "membro2": "Nome do Membro 2",
+  "membro1": "Lucas Thomazette Benvenuto",
+  "membro2": "Pedro Loterio dos Santos",
   "descricao": "Esta API foi desenvolvida para demonstrar a integração de bots e agentes de IA como parceiros no ambiente de trabalho. A solução visa facilitar a automação de tarefas rotineiras, melhorar a produtividade e proporcionar assistência inteligente no dia a dia profissional."
 }
 ```
 
 ## URL da Imagem no Docker Hub
 
-**URL:** [Adicionar URL da imagem no Docker Hub após publicação]
-
-Exemplo: `https://hub.docker.com/r/[seu-usuario]/gs-7-ai-work-bots`
+URL: `https://hub.docker.com/repository/docker/akflamingo2610/gs-7-ai-work-bots/general`
 
 ## Descrição dos Workflows CI/CD Implementados
 
@@ -119,12 +117,6 @@ Para que o workflow de CD funcione corretamente, é necessário configurar os se
 1. `DOCKERHUBUSERNAME`: Seu usuário do Docker Hub
 2. `DOCKERHUBPASSWORD`: Seu token/senha de acesso do Docker Hub
 
-**Como configurar:**
-1. Acesse o repositório no GitHub
-2. Vá em Settings > Secrets and variables > Actions
-3. Adicione os secrets mencionados acima
-
-**Nota:** Os secrets já estão configurados no repositório.
 
 ## Estrutura do Projeto
 
