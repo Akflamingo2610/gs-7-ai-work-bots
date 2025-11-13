@@ -57,7 +57,6 @@ docker pull akflamingo2610/gs-7-ai-work-bots:latest
 
 # Executar o container
 docker run -p 8081:8081 akflamingo2610/gs-7-ai-work-bots:latest
-```
 
 # Construir a imagem Docker
 docker build -t gs-7-ai-work-bots:latest .
