@@ -75,6 +75,7 @@ Após iniciar a aplicação, a API estará disponível em:
   "descricao": "Esta API foi desenvolvida para demonstrar a integração de bots e agentes de IA como parceiros no ambiente de trabalho. A solução visa facilitar a automação de tarefas rotineiras, melhorar a produtividade e proporcionar assistência inteligente no dia a dia profissional."
 }
 ```
+## URL da imagem no Docker Hub
 
 URL: `https://hub.docker.com/repository/docker/akflamingo2610/gs-7-ai-work-bots/general`
 
