@@ -8,11 +8,14 @@ on:
 jobs:
   versioning:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Get version from pom.xml
         id: get_version
@@ -31,9 +34,12 @@ jobs:
           echo "Generated tag: $TAG"
 
       - name: Create and push tag
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git tag -a "${{ steps.tag.outputs.tag }}" -m "Automatic version tag: ${{ steps.tag.outputs.tag }}"
+          git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}
           git push origin "${{ steps.tag.outputs.tag }}"
 
